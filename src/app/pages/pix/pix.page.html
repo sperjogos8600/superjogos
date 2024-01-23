@@ -1,0 +1,95 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="font-weight: 400; font-size: 18px;">Pix</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid style="margin: 130px 20px auto;">
+    <ion-row>
+      <div class="ion-text-center">
+        <h3 style="color: #fff; font-size: 16px; text-align: justify;">
+          <strong>Digite Abaixo o valor desejado para depositar, ap[os isso escaneie o Qr Code ou copie o Pix copia e cola</strong>
+        </h3>
+      </div>
+    </ion-row>
+    <ion-row>
+      <div class="logo">
+        <img width="90%" class="logo" src="assets/MM_QRcode 1.png">
+      </div>
+    </ion-row>
+      <div class="ion-text-center">
+        <h3 style="color: #fff; font-size: 16px; text-align: center;">
+          <strong>informações</strong>
+        </h3>
+        <h3 style="color: #1F384C; font-size: 16px; text-align: center; margin-top: -7px;">
+          <strong>^</strong>
+        </h3>
+      </div>
+      <div class="ion-text-center" style="border: 1px solid #e47f10; border-radius: 8px; padding: 10px; display: flex; align-items: center; justify-content: center;">
+        <ion-icon name="cash-outline" style="color: #e47f10; font-size: 24px; margin-right: 5px;"></ion-icon>
+        <h3 (click)="presentModal()" style="color: #e47f10; font-size: 16px; text-decoration: underline; margin: 0;">
+          Inserir Valor
+        </h3>
+      </div>
+
+  </ion-grid>
+</ion-content>
+  <ion-content class="contenthistorico">
+    <div class="historico">
+      <ion-row class="centro">
+        <ion-col size-md="auto" size-xs="12">
+          <div class="ion-text-center" style="display: flex; align-items: center; justify-content: center; margin: 2vw;">
+            <ion-icon style="font-size: 6vw; margin-right: 1vw; color: white;" name="share-social-outline"></ion-icon>
+            <h3 style="color: white; font-size: 4vw;">Compartilhar pix copia e cola</h3>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="centro">
+        <ion-col size-md="auto" size-xs="12">
+          <div class="ion-text-center" style="margin: -4vw;">
+            <h3 style="color: white; font-size: 4vw; font-weight: lighter; margin: 0 20px 0;">Não consegue mostrar o QR code? Copie o código com a pessoa que fará o pagamento.</h3>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <!-- <ng-template #modalContent>
+        <ion-content class="ion-padding popovercontent">
+          <ion-grid style="margin: -10px 20px auto;">
+            <ion-row>
+              <div class="ion-text-center">
+                <h3 style="color: #1F384C; font-size: 16px; text-align: justify;">
+                  <strong>Insira o valor</strong>
+                </h3>
+              </div>
+            </ion-row>
+            <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;">
+              <ion-input class="custom-input"
+                style="text-transform: none; font-size: 16px; color: #1F384C;"
+                type="Number"
+              ></ion-input>
+            </ion-item>
+            <ion-row>
+              <ion-button class="entrar" style="width: 100%; margin-bottom: 7px; text-transform: capitalize; font-size: 16px;" expand="block" (click)="pix2()">Entrar</ion-button>
+            </ion-row>
+          </ion-grid>
+        </ion-content>
+    </ng-template> -->
+
+    <!-- <ion-popover trigger="auto-trigger" cssClass="custom-popover">
+      <ng-template>
+
+      </ng-template>
+    </ion-popover> -->
+
+
+</ion-content>
+
+
+
+
+

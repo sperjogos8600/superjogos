@@ -1,0 +1,81 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="font-weight: 400; font-size: 18px;">Pix</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid style="margin: 130px 20px auto;">
+    <ion-row>
+      <div class="ion-text-center">
+        <h3 style="color: #1F384C; font-size: 16px; text-align: left; margin-right: 130px;">
+          <strong>Para quem você quer transferir R$ 0,01?</strong>
+        </h3>
+      </div>
+      <div class="ion-text-center" style="margin-bottom: 20px; margin-top: -15px;">
+        <h3 style="color: #999EC7; font-size: 14px; text-align: left; margin-right: 90px;">
+          Encontre um contato na sia lista ou inicie uma nova transferencia
+        </h3>
+      </div>
+    </ion-row>
+    <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px; margin-top: -10px;">
+      <ion-input class="custom-input"
+        style="text-transform: none; font-size: 16px; color: #1F384C;"
+        type="text"
+        label="Nome, CPF/CNPJ ou chave Pix"
+        label-placement="floating"
+        placeholder="Nome, CPF/CNPJ ou chave Pix"
+      ></ion-input>
+    </ion-item>
+
+    <div class="ion-text-center">
+      <h3 style="color: #1F384C; font-size: 16px; text-align: left; margin-right: 130px;">
+        <strong>Contatos frequentes</strong>
+      </h3>
+    </div>
+
+    <ion-row>
+      <div class="logo">
+        <img (click)="transacao()" width="70%" class="logo" style="left: 0;" src="assets/contatos.png">
+      </div>
+    </ion-row>
+
+    <div class="ion-text-center">
+      <h3 style="color: #1F384C; font-size: 16px; text-align: left; margin-right: 130px;">
+        <strong>Todos os contatos</strong>
+      </h3>
+    </div>
+
+    <ion-row>
+      <div class="logo">
+        <img width="100%" class="logo" style="left: 0;" src="assets/lista.png">
+      </div>
+    </ion-row>
+
+
+  </ion-grid>
+</ion-content>
+
+<ion-content class="contenthistorico">
+  <div class="historico">
+    <ion-row class="centro">
+      <ion-col size-md="auto" size-xs="12">
+        <div class="ion-text-center" style="display: flex; align-items: center; justify-content: center; margin: 2vw;">
+          <ion-icon style="font-size: 6vw; margin-right: 1vw; color: white;" name="share-social-outline"></ion-icon>
+          <h3 style="color: white; font-size: 4vw;">Compartilhar pix copia e cola</h3>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="centro">
+      <ion-col size-md="auto" size-xs="12">
+        <div class="ion-text-center" style="margin: -4vw;">
+          <h3 style="color: white; font-size: 4vw; font-weight: lighter; margin: 0 20px 0;">Não consegue mostrar o QR code? Compartilhe o código com a pessoa que fará o pagamento.</h3>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+
+</ion-content>

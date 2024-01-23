@@ -1,0 +1,117 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="font-weight: 400; font-size: 18px;">Criar conta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background" [fullscreen]="true">
+
+  <ion-row>
+    <div class="logo">
+      <img width="70%" class="logo" src="assets/logo.png">
+    </div>
+  </ion-row>
+
+  <ion-grid style="margin: 30px 20px auto;">
+    <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;">
+      <ion-input class="custom-input"
+        style="text-transform: none; font-size: 16px; color: #fff;"
+        label-placement="floating"
+        placeholder="Nome"
+        label="Nome"
+      ></ion-input>
+    </ion-item>
+    <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;">
+      <ion-input class="custom-input"
+        style="text-transform: none; font-size: 16px; color: #fff;"
+        label="E-mail"
+        label-placement="floating"
+        placeholder="Email"
+      ></ion-input>
+    </ion-item>
+    <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;">
+      <ion-input class="custom-input"
+        style="text-transform: none; font-size: 16px; color: #fff;"
+        label="CPF"
+        label-placement="floating"
+        placeholder="CPF"
+      ></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col size="3">
+        <ion-item class="custom-item" lines="none" style="width: 102%; margin-bottom: 7px; margin-left: -5px;">
+          <ion-input class="custom-input"
+            style="text-transform: none; font-size: 16px; color: #fff;"
+            label="DDD"
+            label-placement="floating"
+            placeholder="DDD"
+          ></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item class="custom-item" lines="none" style="width: 102%; margin-bottom: 7px;">
+          <ion-input class="custom-input"
+            style="text-transform: none; font-size: 16px; color: #fff;"
+            label="Número"
+            label-placement="floating"
+            placeholder="Número"
+          ></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;">
+        <ion-input class="custom-input"
+          style="text-transform: none; font-size: 16px; color: #fff;"
+          type="{{ passwordVisible ? 'text' : 'password' }}"
+          label="Senha"
+          label-placement="floating"
+          placeholder="Senha"
+        ></ion-input>
+        <ion-icon
+          slot="end"
+          name="{{ passwordVisible ? 'eye-off' : 'eye' }}"
+          style="cursor: pointer; color: gold;"
+          (click)="togglePasswordVisibility()"
+        ></ion-icon>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;">
+        <ion-input class="custom-input"
+          style="text-transform: none; font-size: 16px; color: #fff;"
+          type="{{ passwordVisible ? 'text' : 'password' }}"
+          label="Repetir senha"
+          label-placement="floating"
+          placeholder="Repetir senha"
+        ></ion-input>
+        <ion-icon
+          slot="end"
+          name="{{ passwordVisible ? 'eye-off' : 'eye' }}"
+          style="cursor: pointer; color: gold;"
+          (click)="togglePasswordVisibility()"
+        ></ion-icon>
+      </ion-item>
+    </ion-row>
+    <ion-row style="margin: auto;">
+      <ion-col size="1"><ion-checkbox labelPlacement="end" style="margin-top: 13px; margin-right: 5px;"></ion-checkbox></ion-col>
+      <ion-col size="10"><h4 style="color: #fff; font-size: 16px;">Concordo com a <span (click)="politica()" style="color: gold; font-size: 16px; text-decoration: underline;">Política de Privacidade </span>do notifica pix</h4></ion-col>
+
+    </ion-row>
+    <ion-row>
+      <ion-button class="entrar" style="width: 100%; height: 52px; margin-bottom: 7px; text-transform: capitalize; font-size: 16px;" expand="block" (click)="permissoes()">Cadastrar</ion-button>
+    </ion-row>
+  </ion-grid>
+
+
+    <div class="ion-text-center footer">
+      <h2 style="color: #fff; font-size: 16px; margin-top: 60px;">já tem uma conta?</h2>
+      <h2 style="color: gold; font-size: 16px; text-decoration: underline;" (click)="entrar()">Fazer Login</h2>
+    </div>
+
+</ion-content>
+
+

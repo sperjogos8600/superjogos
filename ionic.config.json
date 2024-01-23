@@ -1,0 +1,8 @@
+{
+  "name": "superjogos",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

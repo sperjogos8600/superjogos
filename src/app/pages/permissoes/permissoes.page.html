@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="font-weight: 400; font-size: 18px;">Permissões</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fullscreen">
+
+  <div class="container ion-align-items-center">
+  <ion-grid class="ion-justify-content-center">
+    <div class="ion-text-center" style="margin: auto 20px;">
+      <ion-row>
+        <div class="logo">
+          <img width="100%" class="logo" src="assets/map.svg">
+        </div>
+      </ion-row>
+      <ion-row>
+        <div class="ion-text-center" style="margin: auto 30px auto;">
+          <h3 style="color: #1F384C;"> Precisamos de acesso à sua <strong>localização</strong> atual para:</h3>
+        </div>
+      </ion-row>
+      <div class="ion-text-center">
+        <ion-row class="ion-align-items-center">
+          <ion-col size="2" class="ion-text-center">
+            <img src="assets/Vector.svg" style="width: 50%;">
+          </ion-col>
+          <ion-col size="10">
+            <h3 style="color: #999EC7; font-size: medium; text-align: left;">
+              Visualizar lugares com <strong style="color: #01B3A3;">superjogos</strong> ao seu redor.
+            </h3>
+          </ion-col>
+        </ion-row>
+      </div>
+      <ion-row>
+        <ion-button class="google" (click)="home()"
+          style="width: 100%; height: 52px; margin-bottom: 7px; text-transform: none; font-size: 16px;"
+          expand="block"><ion-icon style="padding-right: 4px;" src="assets/permitir.svg"
+            slot="start"></ion-icon>Permitir</ion-button>
+      </ion-row>
+    </div>
+  </ion-grid>
+  </div>
+
+
+
+</ion-content>

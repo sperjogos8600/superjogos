@@ -1,0 +1,77 @@
+<ion-content [fullscreen]="true" scroll-y="false">
+
+  <ion-grid style="margin: 30px 30px auto;">
+    <ion-row class="ion-align-items-center">
+      <img style="margin: auto; margin-top: -40px;" width="70%" class="logo" src="assets/logo.png">
+    </ion-row>
+    <ion-row style="margin-top: -30px;">
+      <h2 style="font-size: 17px; font-weight: 300; color: white; ">Saldo do dia</h2>
+    </ion-row>
+    <ion-row>
+      <h2 style="font-size: 39px; font-weight: bold; margin-top: -10px; color: white; ">R$ 2.123,45</h2>
+    </ion-row>
+    <ion-row class="ion-text-center">
+      <ion-col size="6">
+        <ion-button (click)="pix()" class="entrar" shape="round" style="width: 100%; height: 40px; margin-bottom: 7px; font-size: 13px; color: white; margin-left: -5px; padding-left: -10px;">
+          <ion-icon style="color: white; display: inline !important;" name="add-outline" slot="start"></ion-icon>Depositar
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button  (click)="chave()" class="acessar" shape="round" style="width: 100%; height: 40px; margin-bottom: 7px; font-size: 13px; color:  #e47f10; margin-right: -5px;">
+          <ion-icon style="color:  #e47f10; display: inline !important;" name="arrow-forward-outline" slot="start"></ion-icon>Sacar
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+
+
+  </ion-grid>
+
+  <ion-content>
+    <div class="historico">
+      <div style="margin: 10px 30px auto;">
+        <ion-row class="ion-align-items-center" style="margin-left: 40px;">
+            <h2 style="color:  #fff; font-size: 29px; display: inline-block; margin-left: -40px;">Jogos Disponíveis </h2>
+        </ion-row>
+      </div>
+
+      <ion-content class="content2">
+
+
+          <ion-row style=" display: flex; justify-items: center;">
+            <ion-col>
+              <img width="84%" class="logo2" src="assets/trucoicon2.png">
+            </ion-col>
+          </ion-row>
+          <ion-row style=" display: flex; justify-items: center;">
+            <ion-col>
+              <img width="84%" class="logo2" src="assets/trucoicon2.png">
+            </ion-col>
+          </ion-row>
+          <ion-row style=" display: flex; justify-items: center;">
+            <ion-col>
+              <img width="84%" class="logo2" src="assets/trucoicon2.png">
+            </ion-col>
+          </ion-row>
+          <ion-row style=" display: flex; justify-items: center;">
+            <ion-col>
+              <img width="84%" class="logo2" src="assets/trucoicon2.png">
+            </ion-col>
+          </ion-row>
+          <ion-row style=" display: flex; justify-items: center;">
+            <ion-col size="6"> <img width="84%" class="logo2" src="assets/trucoicon.png"></ion-col>
+            <ion-col size="6" >  <img width="84%" class="logo2" src="assets/cachetaicon.png"></ion-col>
+          </ion-row>
+          <ion-row style=" display: flex; justify-items: center;">
+            <ion-col size="6"> <img width="84%" class="logo2" src="assets/cachetaoicon.png"></ion-col>
+            <ion-col size="6"> <img width="84%" class="logo2" src="assets/dominoicon.png"></ion-col>
+          </ion-row>
+          <ion-row style="display: flex; justify-items: center; margin-bottom: 120px;">
+            <ion-col size="6"> <img width="84%" class="logo2" src="assets/unoicon.png"></ion-col>
+            <ion-col size="6"></ion-col>
+          </ion-row>
+      </ion-content>
+    </div>
+  </ion-content>
+
+</ion-content>

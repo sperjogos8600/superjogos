@@ -1,0 +1,23 @@
+<ion-content>
+  <ion-grid style="margin: -10px 20px auto;">
+    <ion-row>
+      <div class="ion-text-center">
+        <h3 style="color: #1F384C; font-size: 16px; text-align: left;">
+          <strong>Quanto você quer Depositar?</strong>
+        </h3>
+      </div>
+    </ion-row>
+    <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;">
+      <ion-input class="custom-input"
+        style="text-transform: none; font-size: 16px; color: #1F384C;"
+        type="number"
+        label="R$"
+        placeholder="0,00"
+        inputmode="numeric"
+      ></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-button (click)="dismiss()" class="entrar" style="width: 100%; margin-bottom: 7px; text-transform: capitalize; font-size: 16px;" expand="block" >Confirmar</ion-button>
+    </ion-row>
+  </ion-grid>
+</ion-content>

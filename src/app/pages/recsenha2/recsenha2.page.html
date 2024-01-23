@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="font-weight: 400; font-size: 18px;">Recuperar a senha</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+  <ion-grid style="margin: 30px 20px auto;">
+    <ion-row>
+      <div class="ion-text-center" style="margin-bottom: 20px;">
+        <h3 style="color: #fff; font-size: 16px; text-align: justify;">
+          <strong>Insira o código abaixo</strong>
+        </h3>
+      </div>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3">
+        <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;">
+          <ion-input #input1 class="custom-input" maxlength="1" (input)="handleInput(input1, input2)" style="text-transform: none; font-size: 16px; color: #fff;" label-placement="floating" placeholder="0" type="number"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="3">
+        <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;">
+          <ion-input #input2 class="custom-input" maxlength="1" (input)="handleInput(input2, input3)" style="text-transform: none; font-size: 16px; color: #fff;" label-placement="floating" placeholder="0" type="number"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="3">
+        <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;">
+          <ion-input #input3 class="custom-input" maxlength="1" (input)="handleInput(input3, input4)" style="text-transform: none; font-size: 16px; color: #fff;" label-placement="floating" placeholder="0" type="number"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="3">
+        <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;">
+          <ion-input #input4 class="custom-input" maxlength="1" (input)="handleInput(input4, null)" style="text-transform: none; font-size: 16px; color: #fff;" label-placement="floating" placeholder="0" type="number"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-button class="entrar" style="width: 100%; height: 52px; margin-bottom: 7px; text-transform: capitalize; font-size: 16px;" expand="block" (click)="recsenha3()" [disabled]="!isAllInputsFilled()">Próximo</ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

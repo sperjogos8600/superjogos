@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="font-weight: 400; font-size: 18px;">Recuperar a senha</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-grid style="margin: 30px 20px auto;">
+    <ion-row>
+      <div class="ion-text-center" style="margin-bottom: 20px;">
+        <h3 style="color: #fff; font-size: 16px; text-align: justify;">
+          <strong>Agora, crie uma nova senha.</strong>
+        </h3>
+      </div>
+    </ion-row>
+    <ion-row>
+      <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;">
+        <ion-input class="custom-input"
+          style="text-transform: none; font-size: 16px; color: #fff;"
+          type="{{ passwordVisible ? 'text' : 'password' }}"
+          label="Senha"
+          label-placement="floating"
+          placeholder="Senha"
+        ></ion-input>
+        <ion-icon
+          slot="end"
+          name="{{ passwordVisible ? 'eye-off' : 'eye' }}"
+          style="cursor: pointer; color: gold;"
+          (click)="togglePasswordVisibility()"
+        ></ion-icon>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;">
+        <ion-input class="custom-input"
+          style="text-transform: none; font-size: 16px; color: #fff;"
+          type="{{ passwordVisible ? 'text' : 'password' }}"
+          label="Repetir senha"
+          label-placement="floating"
+          placeholder="Repetir senha"
+        ></ion-input>
+        <ion-icon
+          slot="end"
+          name="{{ passwordVisible ? 'eye-off' : 'eye' }}"
+          style="cursor: pointer; color: gold;"
+          (click)="togglePasswordVisibility()"
+        ></ion-icon>
+      </ion-item>
+    </ion-row>
+
+    <ion-row>
+      <ion-button class="entrar" style="width: 100%; height: 52px; margin-bottom: 7px; text-transform: capitalize; font-size: 16px;" expand="block" (click)="inicio()">Próximo</ion-button>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

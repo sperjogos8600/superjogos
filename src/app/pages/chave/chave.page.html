@@ -1,0 +1,121 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="font-weight: 400; font-size: 18px;">Saque</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<ion-grid style="margin: 10px 20px auto;">
+  <ion-row>
+    <div class="ion-text-center">
+      <h3 style="color: #fff; font-size: 24px; text-align: justify;">
+        <strong>Sacar Valor</strong>
+      </h3>
+    </div>
+  </ion-row>
+  <ion-row >
+    <ion-col size="6">
+      <ion-button (click)="pix()" class="entrar" style="width: 100%; height: 56px; margin-bottom: 7px; font-size: 12px; color: #fff; margin-left: -5px;"  > <ion-icon style=" color: #fff;" name="cash-outline" slot="start"></ion-icon>Sacar Dinheiro</ion-button>
+    </ion-col>
+    <ion-col size="6">
+      <ion-button class="outras" style="width: 100%; height: 56px; margin-bottom: 7px; font-size: 12px; color: #fff; margin-left: -5px;"  > <ion-icon style=" color: #fff;" name="key-outline" slot="start"></ion-icon>Minhas Chaves</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <div class="ion-text-center">
+      <h3 style="color: #fff; font-size: 20px; text-align: justify;">
+        <strong>Salvar Chave Pix</strong>
+      </h3>
+    </div>
+  </ion-row>
+  <ion-row>
+    <div class="logo" *ngFor="let svgButton of svgButtons">
+      <button class="svg-button" (click)="toggleSVG(svgButton)">
+        <img height="80px" style="margin: 10px;" [src]="svgButton.selected ? svgButton.selectedPath : svgButton.path">
+      </button>
+    </div>
+  </ion-row>
+  <ion-row>
+    <ion-list  lines="none" style="background-color: transparent; width: 100%; ">
+      <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;" >
+        <ion-icon class="pix"
+        slot="start"
+        src="assets/chave.svg"
+        style="cursor: pointer; color: #01B3A3;"
+      ></ion-icon>
+        <ion-select class="select" [disabled]="!isAnySVGSelected()" style="text-transform: none; font-size: 16px; color: #fff; flex: 1; font-weight: bold;"  interface="popover" placeholder="Selecione o tipo de chave">
+          <ion-select-option value="apples">CPF</ion-select-option>
+          <ion-select-option value="oranges">Telefone</ion-select-option>
+          <ion-select-option value="bananas">E-mail</ion-select-option>
+          <ion-select-option value="bananas">Chave Aleatória</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </ion-row>
+  <ion-row>
+    <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;">
+      <ion-icon class="pix"
+        slot="start"
+        src="assets/pix.svg"
+        style="cursor: pointer; color: #01B3A3;"
+      ></ion-icon>
+      <ion-input class="custom-input"
+        style="text-transform: none; font-size: 16px; color: #fff; flex: 1; font-weight: bold;"
+        label="Insira a chave"
+        label-placement="floating"
+        placeholder="Insira a chave"
+        [disabled]="!isAnySVGSelected()"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;">
+      <ion-icon class="area"
+        slot="start"
+        src="assets/edit.svg"
+        style="cursor: pointer; color: #01B3A3;"
+      ></ion-icon>
+          <ion-textarea style="text-transform: none; font-size: 16px; color: #fff; flex: 1; font-weight: bold;"[disabled]="!isAnySVGSelected()"  class="custom-item-area"
+     labelPlacement="floating" placeholder="Descrição" label="Descrição"></ion-textarea>
+    </ion-item>
+
+
+  </ion-row>
+
+  <ion-row>
+      <ion-col size="2"><ion-checkbox labelPlacement="end" style="margin-top: 13px; margin-right: 5px; margin-left: 0;"><h4 style="color: #999EC7; font-size: 16px; padding-bottom: 7px;">Chave padrão</h4></ion-checkbox></ion-col>
+      <ion-col size="10"></ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-button class="entrar" style="width: 100%; height: 52px; margin-bottom: 7px; text-transform: capitalize; font-size: 16px;" expand="block">Salvar chave PIX</ion-button>
+  </ion-row>
+
+
+</ion-grid>
+
+<!-- <ion-tabs>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="tab1">
+      <ion-icon aria-hidden="true" name="home-outline"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="">
+      <ion-icon aria-hidden="true" name="trending-up-outline"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="">
+      <ion-icon aria-hidden="true" name="card-outline"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab3">
+      <ion-icon aria-hidden="true" name="person-outline"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+</ion-tabs> -->
+</ion-content>
+

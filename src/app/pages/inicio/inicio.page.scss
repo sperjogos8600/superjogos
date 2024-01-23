@@ -1,0 +1,29 @@
+ion-content {
+  --background: url('/assets/background.png') no-repeat center center / cover;
+}
+
+.logo{
+  padding-top: 40px;
+  display: block;
+  align-items: center;
+  margin: auto;
+}
+
+.entrar{
+  --background: #01B3A3;
+  color: white;
+  border-radius: 8px;
+
+}
+
+.criarconta{
+  --background: transparent;
+  border: 2px solid #01B3A3;
+  border-radius: 8px;
+  color: #01B3A3;
+}
+
+.google{
+  --background: #D9DFEA;
+  color: #000;
+}

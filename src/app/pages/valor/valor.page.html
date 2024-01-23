@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="font-weight: 400; font-size: 18px;">Sacar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid style="margin: 30px 20px auto;">
+    <ion-row>
+      <div class="ion-text-center">
+        <h3 style="color: #fff; font-size: 16px; text-align: left;">
+          <strong>Quanto você quer receber?</strong>
+        </h3>
+      </div>
+    </ion-row>
+    <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;">
+      <ion-input class="custom-input"
+        style="text-transform: none; font-size: 16px; color: #fff;"
+        type="number"
+        label="R$"
+        placeholder="0,00"
+        inputmode="numeric"
+      ></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-button  class="entrar" style="width: 100%; margin-bottom: 7px; text-transform: capitalize; font-size: 16px;" expand="block" >Confirmar</ion-button>
+    </ion-row>
+
+  </ion-grid>
