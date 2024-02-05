@@ -1,0 +1,34 @@
+
+ion-tabs {
+  --background: #fff;
+  --border-style: none;
+
+}
+
+ion-tab-bar {
+  --background: #fff;
+  --border-style: none;
+  --ion-border-color: transparent;
+  filter: drop-shadow(4px 20px 36px #dc8605);
+}
+
+ion-tab-button {
+  --color-selected: #FC9909;
+}
+
+ion-tab-button {
+  --background: transparent;
+  --color: #fcda96;
+  position: relative;
+}
+
+ion-tab-button.tab-selected::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FC9909;
+  transform: scaleX(1);
+}

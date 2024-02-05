@@ -1,0 +1,74 @@
+<ion-content class="background" [fullscreen]="true">
+
+  <ion-row>
+    <div class="logo">
+      <img width="60%" class="logo" src="assets/logo.png">
+    </div>
+  </ion-row>
+
+  <div class="historico">
+    <ion-row>
+      <div class="ion-text-center" style="margin: 50px auto 30px;">
+        <h3 style="color: #1F384C;"><strong>Login</strong></h3>
+      </div>
+    </ion-row>
+
+    <form [formGroup]="ionicForm"  novalidate>
+        <ion-grid style="margin: auto 20px;">
+      <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;">
+        <ion-input class="custom-input"
+          style="text-transform: none; font-size: 16px; color: #FC9909;"
+          type="Email"
+          label="E-mail"
+          label-placement="floating"
+          placeholder="Email"
+          formControlName="email"
+        ></ion-input>
+
+      </ion-item>
+      <div style="padding-top: -26px;padding-bottom: 16px;" *ngIf="this.ionicForm.controls?.['email'].touched && this.ionicForm.controls?.['email'].invalid">
+        <ion-text *ngIf="errorControl.email.errors?.required" class="errorInput" color="danger">Seu email é obrigatório</ion-text>
+        <ion-text *ngIf="errorControl.email.errors?.pattern" class="errorInput" color="danger">Por favor digite um email válido</ion-text>
+    </div>
+
+      <ion-row>
+        <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;">
+          <ion-input class="custom-input"
+            style="text-transform: none; font-size: 16px; color: #FC9909;"
+            type="{{ passwordVisible ? 'text' : 'password' }}"
+            label="Senha"
+            label-placement="floating"
+            placeholder="Senha"
+            formControlName="password"
+          ></ion-input>
+          <ion-icon
+            slot="end"
+            name="{{ passwordVisible ? 'eye-off' : 'eye' }}"
+            style="cursor: pointer; color: #D4D7F1;"
+            (click)="togglePasswordVisibility()"
+          ></ion-icon>
+        </ion-item>
+        <div style="padding-top: -26px;padding-bottom: 16px;" *ngIf="this.ionicForm.controls?.['password'].touched && this.ionicForm.controls?.['password'].invalid">
+          <ion-text *ngIf="errorControl.password.errors?.required" class="errorInput" color="danger">A sua senha é obrigatória</ion-text>
+          <ion-text *ngIf="errorControl.password.errors?.pattern" class="errorInput"  color="danger">A senha é curta demais</ion-text>
+      </div>
+
+      </ion-row>
+      <ion-row>
+        <div class="forgot-password">
+          <h2 (click)="recsenha()" style="color: #FC9909; font-size: 16px; text-decoration: underline;">Esqueceu a senha?</h2>
+        </div>
+      </ion-row>
+      <ion-row *ngIf="ionicForm.valid">
+        <ion-button class="entrar" style="width: 100%; height: 52px; margin-bottom: 7px; text-transform: capitalize; font-size: 20px;" expand="block" (click)="login()">Entrar</ion-button>
+      </ion-row>
+    </ion-grid>
+    </form>
+
+
+      <div class="ion-text-center">
+        <h2 style="color: #1F384C; font-size: 16px; margin-top: 60px;">É novo por aqui? <span style="color: #FC9909; font-size: 16px; text-decoration: underline; margin-top: -10px;" (click)="cadastrar()"> Cadastre-se </span></h2>
+      </div>
+
+  </div>
+</ion-content>

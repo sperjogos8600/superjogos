@@ -1,0 +1,108 @@
+
+<ion-content class="background" [fullscreen]="true">
+
+  <ion-row>
+    <div class="logo">
+      <img width="60%" class="logo" src="assets/logo.png">
+    </div>
+  </ion-row>
+
+  <div class="historico">
+
+    <ion-row>
+      <div class="ion-text-center" style="margin: 50px auto 30px;">
+        <h3 style="color: #1F384C;"><strong>Cadastrar</strong></h3>
+      </div>
+    </ion-row>
+
+    <form [formGroup]="ionicForm" novalidate>
+
+    <ion-grid style="margin: auto 20px;">
+
+      <ion-row>
+              <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;">
+        <ion-input class="custom-input"
+          style="text-transform: none; font-size: 16px; color: #FC9909;"
+          type="text"
+          formControlName="fullname" placeholder="Nome"
+          label="Nome"
+          formControlName="fullname" placeholder="Fullname"
+          label-placement="floating"
+          placeholder="Nome"
+        ></ion-input>
+      </ion-item>
+
+      <div style="padding-top: -26px;padding-bottom: 16px;"
+        *ngIf="this.ionicForm.controls?.['fullname'].touched && this.ionicForm.controls?.['email'].invalid">
+        <ion-text *ngIf="errorControl.fullname.errors?.required" class="errorInput" color="danger">Seu nome é obrigatório</ion-text>
+      </div>
+      </ion-row>
+
+      <ion-row>
+        <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;">
+        <ion-input class="custom-input"
+          style="text-transform: none; font-size: 16px; color: #FC9909;"
+          type="Email"
+          formControlName="email" placeholder="email"
+          label="E-mail"
+          label-placement="floating"
+          placeholder="Email"
+        ></ion-input>
+      </ion-item>
+
+      <div style="padding-top: -26px;padding-bottom: 16px;"
+        *ngIf="this.ionicForm.controls?.['email'].touched && this.ionicForm.controls?.['email'].invalid">
+        <ion-text *ngIf="errorControl.email.errors?.required" class="errorInput" color="danger">Um email é obrigatório</ion-text>
+        <ion-text *ngIf="errorControl.email.errors?.pattern" class="errorInput" color="danger">Por favor digite um email válido</ion-text>
+      </div>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-item class="custom-item" lines="none" style="width: 100%; margin-bottom: 7px;">
+          <ion-input class="custom-input"
+            style="text-transform: none; font-size: 16px; color: #FC9909;"
+            type="{{ passwordVisible ? 'text' : 'password' }}"
+            label="Senha"
+            formControlName="password" placeholder="password"
+            label-placement="floating"
+            placeholder="Senha"
+          ></ion-input>
+          <ion-icon
+            slot="end"
+            name="{{ passwordVisible ? 'eye-off' : 'eye' }}"
+            style="cursor: pointer; color: #D4D7F1;"
+            (click)="togglePasswordVisibility()"
+          ></ion-icon>
+        </ion-item>
+
+        <div style="padding-top: -26px;padding-bottom: 16px;"
+        *ngIf="this.ionicForm.controls?.['password'].touched && this.ionicForm.controls?.['password'].invalid">
+        <ion-text *ngIf="errorControl.password.errors?.required" class="errorInput" color="danger">Uma senha é obrigatória</ion-text>
+        <ion-text *ngIf="errorControl.password.errors?.pattern" class="errorInput" color="danger">A senha deve conter no mínimo 8 caracteres, contendo:<br>
+          ao menos uma letra<br>
+          ao menos uma letra maiúscula<br>
+          ao menos um número
+        </ion-text>
+      </div>
+      </ion-row>
+
+      <ion-row *ngIf="ionicForm.valid">
+        <ion-button class="entrar" style="width: 100%; height: 52px; margin-bottom: 7px; text-transform: capitalize; font-size: 20px;" expand="block"  (click)="signUP()">Cadastrar</ion-button>
+      </ion-row>
+    </ion-grid>
+    </form>
+
+
+
+      <div class="ion-text-center">
+        <h2 style="color: #1F384C; font-size: 16px; margin-top: 60px;">Já tem uma conta? <span style="color: #FC9909; font-size: 16px; text-decoration: underline; margin-top: -10px;" (click)="login()"> Entre Aqui</span></h2>
+      </div>
+
+  </div>
+
+
+
+
+</ion-content>
+

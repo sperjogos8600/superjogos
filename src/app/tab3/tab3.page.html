@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    </ion-buttons>
+    <ion-title style="font-weight: 400; font-size: 18px;">Meu perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid style="margin: 10px 20px auto;">
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="3">
+          <img class="logo" style="left: 0; margin-top: 20px;" src="assets/logocolor.png">
+        </ion-col>
+        <ion-col size="9">
+          <h1 style="color: black; font-size: 30px; padding-left: 10px;">Olá!</h1>
+          <h2 style="color: black; font-size: 14px; margin-top: -5px;  padding-left: 10px;">{{email}}</h2>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <!-- <ion-row>
+      <div class="logo">
+        <img class="logo" style="left: 0; margin-top: 20px;" src="assets/profile.png">
+      </div>
+    </ion-row> -->
+
+    <ion-row style="margin-top: 30px;">
+        <ion-button (click)="signOut()" class="outras" style="width: 100%; height: 56px; margin-bottom: 7px; font-size: 12px; color: #FC9909; margin-left: -5px; margin-top: 20px;" > <ion-icon style=" color: #FC9909;" name="exit-outline" slot="start"></ion-icon>Fazer logout</ion-button>
+    </ion-row>
+
+
+  </ion-grid>
+</ion-content>

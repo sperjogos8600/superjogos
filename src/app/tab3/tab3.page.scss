@@ -1,0 +1,110 @@
+ion-content {
+  --background: white;
+}
+
+ion-toolbar {
+  --background: #FC9909;
+  --color: white;
+}
+
+
+.logo{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.historico{
+  background-color: #01B3A3;
+  height: 120px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.centro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-modal {
+  --height: 50%;
+  --border-radius: 16px;
+  --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+ion-modal::part(backdrop) {
+  background: rgba(209, 213, 219);
+  opacity: 1;
+}
+
+ion-modal ion-toolbar {
+  --background: rgb(14 116 144);
+  --color: white;
+}
+
+.custom-item {
+  --background: transparent;
+  --border-width: 1px;
+  --border-style: solid;
+  --border-color: gray;
+  --border-radius: 8px;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+.custom-input {
+  --background: transparent;
+  --border: none;
+  --box-shadow: none;
+  --padding-start: 15px !important;
+  --padding-end: 0;
+  --placeholder-color: transparent;
+  --placeholder-opacity: 1;
+}
+
+
+.custom-input::placeholder {
+  color: #1F384C;
+  opacity: 0.5;
+  text-align: right;
+  padding-left: 20px !important;
+}
+
+
+.entrar{
+  --background: #FC9909;
+  color: white;
+  border-radius: 8px;
+
+}
+.popover-centralizado .popover-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #FC9909;
+}
+
+
+.entrar{
+  --background: #FC9909;
+  color: white;
+  border-radius: 10px !important;
+  border: 2px solid #FC9909;
+
+}
+
+.outras{
+  --background: transparent;
+  color:#FC9909;
+  border-radius: 10px;
+  border: 2px solid #FC9909;
+}
+
