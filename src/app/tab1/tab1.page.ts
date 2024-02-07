@@ -16,6 +16,11 @@ export class Tab1Page {
     this.route.navigate(['/chave']);
   }
 
+  domino() {
+    this.route.navigate(['/domino']);
+  }
+
+
   pix() {
     this.route.navigate(['/pix']);
   }

@@ -65,6 +65,10 @@ const routes: Routes = [
   {
     path: 'megafuts',
     loadChildren: () => import('./pages/megafuts/megafuts.module').then( m => m.MegafutsPageModule)
+  },
+  {
+    path: 'domino',
+    loadChildren: () => import('./pages/domino/domino.module').then( m => m.DominoPageModule)
   }
 ];
 @NgModule({
