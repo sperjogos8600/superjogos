@@ -1,10 +1,14 @@
-ion-content {
-  iframe {
-    width: 105%;
-    height: 100%;
-    border: none;
-  }
-  --overflow: hidden;
-  overflow: auto;
+// ion-content {
+//   iframe {
+//     width: 105%;
+//     height: 100%;
+//     border: none;
+//   }
+//   --overflow: hidden;
+//   overflow: auto;
 
+// }
+
+ion-content {
+  --background: url('/assets/tablev.png') no-repeat center center / cover;
 }

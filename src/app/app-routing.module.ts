@@ -69,6 +69,10 @@ const routes: Routes = [
   {
     path: 'domino',
     loadChildren: () => import('./pages/domino/domino.module').then( m => m.DominoPageModule)
+  },
+  {
+    path: 'game',
+    loadChildren: () => import('./pages/game/game.module').then( m => m.GamePageModule)
   }
 ];
 @NgModule({

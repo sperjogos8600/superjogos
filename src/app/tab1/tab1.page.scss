@@ -1,16 +1,37 @@
 ion-content {
-  --background: url('/assets/background.png') no-repeat center center / cover;
+  --background: url('/assets/background.png');
 }
 .content2 {
-  --background: #000;
+  --background: transparent;
+}
+
+ion-toolbar {
+  --background: transparent;
+  --color: white;
+  --box-shadow: none;
+}
+
+
+.tag-amarela {
+  background-color:transparent; /* Cor de fundo amarela */
+  color: #e47f10; /* Cor do texto */
+  padding: 5px 10px; /* Espaçamento interno */
+  border-radius: 20px; /* Bordas arredondadas */
+  font-size: small;
+  margin-left: 10px; /* Margem à esquerda para separar da logo */
+  min-width: 25%;
+  border: 2px solid #e47f10;
+  float: right; /* Posicionamento à direita */
+  margin-right: 10px;
 }
 
 .historico{
-  background-color: black;
-  height: 70%;
+  background-color: transparent;
+  margin-top: 30px;
+  height: 80%;
   width: 100%;
   position: fixed;
-  bottom: 25;
+  bottom: 65px;
   left: 0;
   right: 0;
   z-index: 9999;

@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package superjogos.io.app;
 
 import com.getcapacitor.BridgeActivity;
 

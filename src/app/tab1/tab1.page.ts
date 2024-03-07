@@ -17,7 +17,7 @@ export class Tab1Page {
   }
 
   domino() {
-    this.route.navigate(['/domino']);
+    this.route.navigate(['/game']);
   }
 
 
