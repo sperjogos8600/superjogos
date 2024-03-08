@@ -1,53 +1,70 @@
 ion-content {
-  --background: #FC9909;
+  --background: url('/assets/background.png');
 }
 .content2 {
-  --background: #fff;
+  --background: transparent;
+}
+
+ion-toolbar {
+  --background: transparent;
+  --color: white;
+  --box-shadow: none;
+}
+
+
+.tag-amarela {
+  background-color:transparent; /* Cor de fundo amarela */
+  color: #e47f10; /* Cor do texto */
+  padding: 5px 10px; /* Espaçamento interno */
+  border-radius: 20px; /* Bordas arredondadas */
+  font-size: small;
+  margin-left: 10px; /* Margem à esquerda para separar da logo */
+  min-width: 25%;
+  border: 2px solid #e47f10;
+  float: right; /* Posicionamento à direita */
+  margin-right: 10px;
 }
 
 .historico{
-  background-color: white;
-  height: 87%;
+  background-color: transparent;
+  margin-top: 30px;
+  height: 80%;
   width: 100%;
   position: fixed;
-  position: fixed;
-  bottom: 0;
+  bottom: 65px;
   left: 0;
   right: 0;
   z-index: 9999;
   border-radius: 30px 30px 0 0;
 }
 
-swiper-container {
-  width: 100%;
-  height: 100%;
+.logo2{
+  // border: 2px solid #e47f10;
+  border-radius: 18px;
 }
 
-swiper-slide {
+ion-col{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
 .entrar{
-  --background: #01B3A3;
+  --background:  #e47f10;
   color: white;
   border-radius: 10px
 
 }
 .acessar{
   --background: transparent;
-  color: #01B3A3;
-  border: 2px solid #01B3A3;
+  color:  #e47f10;
+  border: 2px solid  #e47f10;
   border-radius: 100px
 }
 .vertudo{
-  --background: transparent;
+  --background: #E2F0FB;
   --box-shadow: none;
-  color: #FEC759;
-  border-radius: 8px;
-  margin-top: 13px;
+  color: #198AE5;
+  border-radius: 8px
 }
 
 ion-list {

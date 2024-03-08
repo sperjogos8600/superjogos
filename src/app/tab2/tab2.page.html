@@ -1,26 +1,53 @@
 <ion-content [fullscreen]="true" scroll-y="false">
 
-  <div style="margin:30px auto;">
-    <ion-row style="display: flex; justify-content: center;">
-      <img width="60%" class="logo" src="assets/logohorizontal.png">
+  <ion-grid style="margin: 30px 30px auto;">
+
+    <ion-row>
+      <h2 style="font-size: 32px; font-weight: bold; margin-top: -10px; color: white; ">Personalize Seu Jogo!</h2>
     </ion-row>
-  </div>
+    <ion-row style="margin-top: -10px;">
+      <h2 style="font-size: 17px; font-weight: 300; color: white; ">Saldo R$ 2.123,45</h2>
+    </ion-row>
+
+  </ion-grid>
 
   <ion-content>
     <div class="historico">
       <div style="margin: 10px 30px auto;">
-        <ion-row class="ion-align-items-center">
-          <ion-col size="8" class="ion-text-center">
-            <h2 style="color: #1F384C; font-size: 20px; display: inline-block; margin-left: -40px;">Devocionais Favoritos</h2>
-          </ion-col>
-          <ion-col size="4" class="ion-text-right">
-          </ion-col>
+        <ion-row class="ion-align-items-center" style="margin-left: 40px;">
+            <h2 style="color:  #fff; font-size: 29px; display: inline-block; margin-left: -40px;">Personalizações Disponíveis </h2>
         </ion-row>
-
       </div>
 
+      <ion-content class="content2">
 
 
+
+          <ion-row style=" display: flex; justify-items: center;">
+            <ion-col size="6"> <img width="100%" class="logo2" src="assets/mesaicona.png"></ion-col>
+            <ion-col size="6" >  <img width="95%" class="logo2" src="assets/mesaicon.png"></ion-col>
+          </ion-row>
+          <ion-row style=" display: flex; justify-items: center;">
+            <ion-col size="6"> <img width="95%" class="logo2" src="assets/mesaiconam.png"></ion-col>
+            <ion-col size="6"> <img (click)="domino()"  width="95%" class="logo2" src="assets/mesaiconr.png"></ion-col>
+          </ion-row>
+          <ion-row style="display: flex; justify-items: center; ">
+            <ion-col size="6"> <img width="95%" class="logo2" src="assets/mesaiconro.png"></ion-col>
+            <ion-col size="6" >  <img width="95%" class="logo2" src="assets/mesaicon.png"></ion-col>
+          </ion-row>
+          <ion-row style=" display: flex; justify-items: center;">
+            <ion-col size="6"> <img width="100%" class="logo2" src="assets/mesaicona.png"></ion-col>
+            <ion-col size="6" >  <img width="95%" class="logo2" src="assets/mesaicon.png"></ion-col>
+          </ion-row>
+          <ion-row style=" display: flex; justify-items: center;">
+            <ion-col size="6"> <img width="95%" class="logo2" src="assets/mesaiconam.png"></ion-col>
+            <ion-col size="6"> <img (click)="domino()"  width="95%" class="logo2" src="assets/mesaiconr.png"></ion-col>
+          </ion-row>
+          <ion-row style="display: flex; justify-items: center; margin-bottom: 120px;">
+            <ion-col size="6"> <img width="95%" class="logo2" src="assets/mesaiconro.png"></ion-col>
+            <ion-col size="6" >  <img width="95%" class="logo2" src="assets/mesaicon.png"></ion-col>
+          </ion-row>
+      </ion-content>
     </div>
   </ion-content>
 

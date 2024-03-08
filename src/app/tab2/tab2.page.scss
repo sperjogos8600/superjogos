@@ -1,53 +1,49 @@
 ion-content {
-  --background: #FC9909;
+  --background: url('/assets/background.png') no-repeat center center / cover;
 }
 .content2 {
-  --background: #fff;
+  --background: #000;
 }
 
 .historico{
-  background-color: white;
-  height: 87%;
+  background-color: black;
+  height: 77%;
   width: 100%;
   position: fixed;
-  position: fixed;
-  bottom: 0;
+  bottom: 25;
   left: 0;
   right: 0;
   z-index: 9999;
   border-radius: 30px 30px 0 0;
 }
 
-swiper-container {
-  width: 100%;
-  height: 100%;
+.logo2{
+  // border: 2px solid #e47f10;
+  border-radius: 18px;
 }
 
-swiper-slide {
+ion-col{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
 .entrar{
-  --background: #01B3A3;
+  --background:  #e47f10;
   color: white;
   border-radius: 10px
 
 }
 .acessar{
   --background: transparent;
-  color: #01B3A3;
-  border: 2px solid #01B3A3;
+  color:  #e47f10;
+  border: 2px solid  #e47f10;
   border-radius: 100px
 }
 .vertudo{
-  --background: transparent;
+  --background: #E2F0FB;
   --box-shadow: none;
-  color: #FEC759;
-  border-radius: 8px;
-  margin-top: 13px;
+  color: #198AE5;
+  border-radius: 8px
 }
 
 ion-list {

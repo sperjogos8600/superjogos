@@ -2,9 +2,14 @@ ion-content {
   --background: url('/assets/background.png') no-repeat center center / cover;
 }
 
+ion-toolbar {
+  --background: transparent;
+  --color: white;
+}
+
 
 .logo{
-  padding-top: 20px;
+  // padding-top: 20px;
   display: block;
   align-items: center;
   margin: auto;
@@ -12,37 +17,10 @@ ion-content {
 
 
 .entrar{
-  --background: linear-gradient(to right, #FC9909, #FEC759);
+  --background:  rgb(211, 181, 7);
   color: white;
   border-radius: 8px;
-  font-size: x-large;
 
-}
-
-.criarconta{
-  --background: transparent;
-  border: 2px solid #FEC759;
-  border-radius: 8px;
-  color: #FC9909;
-}
-
-.google{
-  --background: #D9DFEA;
-  color: #000;
-}
-
-
-.historico{
-  background-color: white;
-  height: 70%;
-  width: 100%;
-  position: fixed;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-  border-radius: 30px 30px 0 0;
 }
 
 .forgot-password {
@@ -56,7 +34,7 @@ ion-content {
   --background: transparent;
   --border-width: 1px;
   --border-style: solid;
-  --border-color: gray;
+  --border-color: gold;
   --border-radius: 8px;
   --padding-start: 0;
   --padding-end: 0;
@@ -74,7 +52,7 @@ ion-content {
 
 
 .custom-input::placeholder {
-  color: #1F384C;
+  color: gold;
   opacity: 0.5;
   text-align: right;
   padding-left: 20px !important;

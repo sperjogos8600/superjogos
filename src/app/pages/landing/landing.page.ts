@@ -13,7 +13,7 @@ export class LandingPage implements OnInit {
   entrar() {
     this.route.navigate(['/login']);
   }
-  criarconta() {
+  cadastrar() {
     this.route.navigate(['/signup']);
   }
 

@@ -1,137 +1,54 @@
-<ion-content [fullscreen]="true" scroll-y="false">
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <div class="tag-amarela">Saldo? R$ 900,00</div>
+  </ion-toolbar>
+</ion-header>
 
-  <div style="margin:30px auto;">
-    <ion-row style="display: flex; justify-content: center;">
-      <img width="60%" class="logo" src="assets/logohorizontal.png">
+
+<ion-content [fullscreen]="true" scroll-y="false">
+  <ion-grid style="margin: 30px 30px auto;">
+    <ion-row class="ion-align-items-center">
+      <img style="margin: auto; margin-top: -100px;" width="70%" class="logo" src="assets/logo.png">
+      <!-- Adicionando a pequena tag amarela -->
     </ion-row>
-  </div>
+  </ion-grid>
+
 
   <ion-content>
     <div class="historico">
-      <div style="margin: 10px 30px auto;">
-        <ion-row class="ion-align-items-center">
-          <ion-col size="8" class="ion-text-center">
-            <h2 style="color: #1F384C; font-size: 20px; display: inline-block; margin-left: -40px;">Devocionais Populares</h2>
-          </ion-col>
-
-        </ion-row>
-
-        <ion-row>
-          <swiper-container [slidesPerView]="1.2">
-            <swiper-slide style="color: black;">
-              <ion-card>
-                <img alt="Silhouette of mountains" src="assets/slide1.jpg" />
-              </ion-card>
-            </swiper-slide>
-            <swiper-slide style="color: black;">
-              <ion-card>
-                <img alt="Silhouette of mountains" src="assets/slide2.jpg" />
-              </ion-card>
-            </swiper-slide>
-            <swiper-slide style="color: black;">
-              <ion-card>
-                <img alt="Silhouette of mountains" src="assets/slide3.jpg" />
-              </ion-card>
-            </swiper-slide>
-            <swiper-slide style="color: black;">
-              <ion-card>
-                <img alt="Silhouette of mountains" src="assets/slide4.png" />
-              </ion-card>
-            </swiper-slide>
-          </swiper-container>
+      <div style="display: flex; justify-content: center;">
+        <ion-row class="ion-align-items-center" style="">
+            <h2 style="color:  #fff; font-size: 29px; display: inline-block;"> </h2>
         </ion-row>
       </div>
 
-
-      <div style="margin: 10px 30px auto;">
-        <ion-row class="ion-align-items-center">
-          <ion-col size="8" class="ion-text-center">
-            <h2 style="color: #1F384C; font-size: 20px; display: inline-block; margin-left: -40px;">Devocionais Recentes</h2>
-          </ion-col>
-          <ion-col size="4" class="ion-text-right">
-            <ion-button class="vertudo" style="width: 86px; height: 30px; font-size: 12px; color: #FEC759; font-weight: bolder;">Ver Tudo</ion-button>
-          </ion-col>
-        </ion-row>
-
-        <ion-grid>
-          <ion-row>
-            <swiper-container [slidesPerView]="1.2">
-
-              <swiper-slide style="color: black;">
-                <ion-card>
-                  <img width="100%" src="assets/slide1.jpg" />
-                  <ion-card-header style="display: flex; justify-content: space-around; background: #fff;" >
-                    <ion-card-title style="color: black;">Devocional 1 - Estudando Versículo Tal</ion-card-title>
-                  </ion-card-header>
-
-                  <ion-card-content style="background: #fff; padding-top: 20px;">
-                    <div style="display: flex; justify-content: space-between;">
-                      <h3 style="width: 86px; height: 30px; font-size: 15px; color: #FEC759; font-weight: bolder;">17/12/2023</h3>
-                      <h3 style="width: 86px; height: 30px; font-size: 15px; color: #FEC759; font-weight: bolder;     margin-right: -10px;">Ver Mais</h3>
-                    </div>
-
-                  </ion-card-content>
-                </ion-card>
-              </swiper-slide>
-
-              <swiper-slide style="color: black;">
-                <ion-card>
-                  <img width="100%" src="assets/slide1.jpg" />
-                  <ion-card-header style="display: flex; justify-content: space-around; background: #fff;" >
-                    <ion-card-title style="color: black;">Devocional 1 - Estudando Versículo Tal</ion-card-title>
-                  </ion-card-header>
-
-                  <ion-card-content style="background: #fff; padding-top: 20px;">
-                    <div style="display: flex; justify-content: space-between;">
-                      <h3 style="width: 86px; height: 30px; font-size: 15px; color: #FEC759; font-weight: bolder;">17/12/2023</h3>
-                      <h3 style="width: 86px; height: 30px; font-size: 15px; color: #FEC759; font-weight: bolder;     margin-right: -10px;">Ver Mais</h3>
-                    </div>
-
-                  </ion-card-content>
-                </ion-card>
-              </swiper-slide>
-
-              <swiper-slide style="color: black;">
-                <ion-card>
-                  <img width="100%" src="assets/slide1.jpg" />
-                  <ion-card-header style="display: flex; justify-content: space-around; background: #fff;" >
-                    <ion-card-title style="color: black;">Devocional 1 - Estudando Versículo Tal</ion-card-title>
-                  </ion-card-header>
-
-                  <ion-card-content style="background: #fff; padding-top: 20px;">
-                    <div style="display: flex; justify-content: space-between;">
-                      <h3 style="width: 86px; height: 30px; font-size: 15px; color: #FEC759; font-weight: bolder;">17/12/2023</h3>
-                      <h3 style="width: 86px; height: 30px; font-size: 15px; color: #FEC759; font-weight: bolder;     margin-right: -10px;">Ver Mais</h3>
-                    </div>
-
-                  </ion-card-content>
-                </ion-card>
-              </swiper-slide>
-
-              <swiper-slide style="color: black;">
-                <ion-card>
-                  <img width="100%" src="assets/slide1.jpg" />
-                  <ion-card-header style="display: flex; justify-content: space-around; background: #fff;" >
-                    <ion-card-title style="color: black;">Devocional 1 - Estudando Versículo Tal</ion-card-title>
-                  </ion-card-header>
-
-                  <ion-card-content style="background: #fff; padding-top: 20px;">
-                    <div style="display: flex; justify-content: space-between;">
-                      <h3 style="width: 86px; height: 30px; font-size: 15px; color: #FEC759; font-weight: bolder;">17/12/2023</h3>
-                      <h3 style="width: 86px; height: 30px; font-size: 15px; color: #FEC759; font-weight: bolder;     margin-right: -10px;">Ver Mais</h3>
-                    </div>
-
-                  </ion-card-content>
-                </ion-card>
-              </swiper-slide>
-
-            </swiper-container>
-
+      <ion-content class="content2">
+          <ion-row style=" display: flex; justify-items: center;">
+            <ion-col size="6"> <img width="95%" (click)="domino()" class="logo2" src="assets/truco.png"></ion-col>
+            <ion-col size="6" >  <img width="95%"  (click)="domino()" class="logo2" src="assets/cacheta.png"></ion-col>
           </ion-row>
-        </ion-grid>
-      </div>
-
+          <ion-row style=" display: flex; justify-items: center;">
+            <ion-col size="6"> <img width="95%" (click)="domino()" class="logo2" src="assets/CACHETÃO.png"></ion-col>
+            <ion-col size="6"> <img (click)="domino()"  width="95%" class="logo2" src="assets/domino.png"></ion-col>
+          </ion-row>
+          <ion-row style="display: flex; justify-items: center;">
+            <ion-col size="6"> <img width="95%" (click)="domino()" class="logo2" src="assets/UNOO.png"></ion-col>
+            <ion-col size="6"></ion-col>
+          </ion-row>
+          <ion-row class="ion-text-center" style="margin: 10px 40px;">
+            <ion-col size="6">
+              <ion-button (click)="pix()" class="entrar" shape="round" style="width: 100%; height: 40px; margin-bottom: 7px; font-size: 13px; color: white; margin-left: -5px; padding-left: -10px;">
+                <ion-icon style="color: white; display: inline !important;" name="add-outline" slot="start"></ion-icon>Depositar
+              </ion-button>
+            </ion-col>
+            <ion-col size="6">
+              <ion-button  (click)="chave()" class="acessar" shape="round" style="width: 100%; height: 40px; margin-bottom: 7px; font-size: 13px; color:  #e47f10; margin-right: -5px;">
+                <ion-icon style="color:  #e47f10; display: inline !important;" name="arrow-forward-outline" slot="start"></ion-icon>Sacar
+              </ion-button>
+            </ion-col>
+          </ion-row>
+      </ion-content>
     </div>
-  </ion-content>
+
 
 </ion-content>

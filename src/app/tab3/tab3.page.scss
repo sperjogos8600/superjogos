@@ -1,9 +1,10 @@
 ion-content {
-  --background: white;
+  --background: url('/assets/background.png') no-repeat center center / cover;
+
 }
 
 ion-toolbar {
-  --background: #FC9909;
+  --background: transparent;
   --color: white;
 }
 
@@ -79,7 +80,7 @@ ion-modal ion-toolbar {
 
 
 .entrar{
-  --background: #FC9909;
+  --background: #01B3A3;
   color: white;
   border-radius: 8px;
 
@@ -89,22 +90,22 @@ ion-modal ion-toolbar {
   align-items: center;
   justify-content: center;
   height: 100%;
-  color: #FC9909;
+  color: #01B3A3;
 }
 
 
 .entrar{
-  --background: #FC9909;
+  --background: #d3ebe9;
   color: white;
   border-radius: 10px !important;
-  border: 2px solid #FC9909;
+  border: 2px solid #e47f10;
 
 }
 
 .outras{
   --background: transparent;
-  color:#FC9909;
+  color:#01B3A3;
   border-radius: 10px;
-  border: 2px solid #FC9909;
+  border: 2px solid #e47f10;
 }
 
